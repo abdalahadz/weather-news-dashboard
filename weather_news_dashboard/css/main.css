@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900");
+body, html {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.topCanvas {
+  background-color: #000;
+  background-image: url("/images/upperBg@2x.png");
+  background-size: 100%;
+  background-position-y: -2em;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+}
+
+header {
+  padding: 2em;
+  padding-bottom: 0;
+}
+
+header .menu-btn {
+  width: 18px;
+  float: left;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  background: #EEF0F2;
+  padding: 2em;
+  width: calc(50% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+nav .close-btn {
+  float: right;
+  padding-right: 2.5%;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20% auto 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #13505B;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.upperSection {
+  color: white;
+}
+
+.upperSection .upperSegments {
+  list-style-type: none;
+  margin: 0 auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  width: 90%;
+  float: left;
+}
+
+.upperSection .upperSegments .currTemp {
+  padding: 0;
+  font-size: 25px;
+}
+
+.upperSection .upperSegments .currTemp h1 {
+  font-weight: 700;
+  font-size: 125px;
+  margin: 0;
+  margin-top: -0.2em;
+  padding: 0;
+  text-align: center;
+}
+
+.upperSection .upperSegments .currTemp h3 {
+  font-weight: 300;
+  margin: 0;
+  margin-top: -0.5em;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.upperSection .upperSegments .g {
+  border: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.upperSection .upperSegments .g .f {
+  margin-top: -0.7em;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-weight: 100;
+}
+
+.upperSection .upperSegments .g .f .row1 p {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.upperSection .upperSegments .g .f .row2 p {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.upperSection .upperSegments .future {
+  height: 95%;
+}
+
+.upperSection .upperSegments .future .location {
+  text-align: center;
+}
+
+.upperSection .upperSegments .future .location h2 {
+  margin-top: -0.2em;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.upperSection .upperSegments .future .location .locationLine {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 235px;
+  height: 0px;
+  margin: -3.3em 2em 0 13em;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.upperSection .upperSegments .future .futureWeather ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: -1.25em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  padding-top: 0.5em;
+  width: 110%;
+}
+
+.upperSection .upperSegments .future .futureWeather ul .weatherCard {
+  font-size: 20px;
+  background: white;
+  color: #13505B;
+  width: 130px;
+  height: 180px;
+  border-radius: 8px;
+  text-align: center;
+  float: left;
+}
+
+.upperSection .upperSegments .future .futureWeather ul .weatherCard h4 {
+  margin: 0.7em auto 0.3em auto;
+}
+
+.upperSection .upperSegments .future .futureWeather ul .weatherCard img {
+  height: 80px;
+  width: 80px;
+}
+
+.show-menu {
+  display: block;
+  -webkit-animation: slide-menu-open 0.5s ease-in forwards;
+          animation: slide-menu-open 0.5s ease-in forwards;
+}
+
+@-webkit-keyframes slide-menu-open {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slide-menu-open {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather and News</title>
+</head>
+<body>
+    <div class="topCanvas">
+        
+        <div class="navBar">
+                <nav id="overlay">
+                    <img src="images/back_arrow_icon.svg" class="close-btn" id="close-menu">
+                
+                    <ul>
+                        <li>
+                            <a href="https://github.com/thetravellerr">Github</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <header>
+                    <img src="images/menu_icon.svg" class="menu-btn" id="open-menu">
+                </header>
+        </div>
+        
+        <div class="upperSection">
+            <ul class="upperSegments">
+                <li>
+                    <div class="today">
+                        <table class="g">
+                            <th>
+                                    <div class="currTemp">
+                                            <h1>21°C</h1>
+                                            <h3>cloudy</h3>
+                                    </div>
+            
+                                    <div class="humiWind">
+                                        <table class="f">
+                                            <tr class="row1">
+                                                <th><p>HUMIDITY</p></th>
+                                                <th><p>WIND</p></th>
+                                            </tr>
+                                            
+                                            <tr class="row2">
+                                                <th class="line"><p>64%</p></th>
+                                                <th class="line"><p>20KM/H</p></th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </th>
+                        </table>
+                        
+                        
+                    </div>
+                </li>
+
+                <li>
+                        <div class="future">
+                            <div class="location">
+                                <h2>TORONTO</h2>
+                                <div class="locationLine"></div>
+                            </div>
+
+                            <div class="futureWeather">
+                                <ul>
+                                    <li><div class="weatherCard" id="dayOne">
+                                        <h4>TUE</h4>
+                                        <img src="images/cloudy.png">
+                                        <h4>18°C</h4>
+                                    </div></li>
+
+
+                                    <li><div class="weatherCard" id="dayTwo">
+                                        <h4>WED</h4>
+                                        <img src="images/rainShowers.png">
+                                        <h4>17°C</h4>
+                                    </div></li>
+
+
+                                    <li><div class="weatherCard" id="dayThree">
+                                        <h4>THU</h4>
+                                        <img src="images/partlyCloudy.png">
+                                        <h4>19°C</h4>
+                                    </div></li>
+
+
+                                    <li><div class="weatherCard" id="dayFour">
+                                        <h4>FRI</h4>
+                                        <img src="images/sunny.png">
+                                        <h4>24°C</h4>
+                                    </div></li>
+
+                                </ul>
+                            </div>
+                            
+                        </div>
+                </li>
+
+            </ul>
+                
+        </div>
+        
+
+    
+
+   
+    </div>
+    
+    <script>
+    
+            var overlay = document.getElementById('overlay');
+            var closeMenu = document.getElementById('close-menu');
+    
+            document.getElementById('open-menu').addEventListener('click', function() {
+                overlay.classList.add('show-menu');
+            });
+    
+            document.getElementById('close-menu').addEventListener('click', function() {
+                overlay.classList.remove('show-menu');
+            });
+        
+        </script>
+
+
+</body>
+</html>

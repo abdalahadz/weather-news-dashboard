@@ -4,4 +4,4 @@ News, weather and twitter dashboard intended to be run continuously on a large d
 Currently only front-end and utilizes the openweathermap, twitter and news APIs.  Design
 was done in Adobe XD then converted to HTML CSS(SASS) and uses vanilla javascript.
 
-I want to add a node.js backend but I've yet to decide what for.
+

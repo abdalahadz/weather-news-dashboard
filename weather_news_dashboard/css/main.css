@@ -61,6 +61,7 @@ nav ul a {
 
 .upperSection {
   color: white;
+  z-index: -1;
 }
 
 .upperSection .upperSegments {
@@ -91,20 +92,22 @@ nav ul a {
 .upperSection .upperSegments .currTemp h3 {
   font-weight: 300;
   margin: 0;
-  margin-top: -0.5em;
+  margin-top: 0em;
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
 }
 
 .upperSection .upperSegments .g {
-  border: 0;
+  width: 20%;
+  position: absolute;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .upperSection .upperSegments .g .f {
-  margin-top: -0.7em;
-  width: 100%;
+  position: absolute;
+  margin-top: 0em;
+  width: 20vw;
   height: auto;
   text-align: center;
   font-weight: 100;
